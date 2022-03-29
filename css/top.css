@@ -292,6 +292,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 }
 .aftale .box {
 	width: 480px;
@@ -341,5 +342,6 @@
 	.aftale p {
 		line-height: 1.1;
 		padding: 15px 0;
+		font-size: 24px;
 	}
 }
