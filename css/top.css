@@ -128,7 +128,7 @@
 		padding: 30px 0 40px;
 	}
 	.why-us h2 {
-		font-size: 36px;
+		font-size: 32px;
 	}
 }
 /* testimonials */
@@ -176,6 +176,7 @@
 	}
 	.testimonials p {
 		margin: 0 0 20px;
+		font-size: 14px;
 	}
 	.testimonials-in {
 		margin: 0;

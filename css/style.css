@@ -337,3 +337,11 @@ h2 {
 .slick-dots li button {
 	opacity: 0;
 }
+@media screen and (max-width: 767px) {
+	.btn-navbar {
+		background: url(../img/menu.png) no-repeat center;
+	}
+	.is-menu-open .btn-navbar {
+		background: url(../img/close.png) no-repeat center;
+	}
+}
