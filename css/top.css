@@ -164,6 +164,11 @@
 .testimonials dd {
 	line-height: 1.7;
 	color: #000;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
 }
 @media screen and (min-width: 992px) {
 	.testimonials .slick {
