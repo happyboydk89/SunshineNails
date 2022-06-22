@@ -130,6 +130,10 @@
 	.why-us h2 {
 		font-size: 32px;
 	}
+	.why-us .photo {
+		width: 70%;
+		margin: 0 auto 20px;
+	}
 }
 /* testimonials */
 .testimonials {
@@ -284,11 +288,17 @@
 		width: 49%;
 		margin: 0 0 2%;
 	}
+	.gallery-grid li:first-child {
+		width: 100%;
+	}
 	.gallery-grid li img {
 		display: none;
 	}
 	.gallery-grid a {
 		padding-top: 100%;
+	}
+	.gallery-grid li:first-child a {
+		padding-top: 50%;
 	}
 }
 
