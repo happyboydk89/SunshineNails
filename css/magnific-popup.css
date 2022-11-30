@@ -8,7 +8,7 @@
 	overflow: hidden;
 	position: fixed;
 	background: #0b0b0b;
-	opacity: 0.8;
+	opacity: 0.5;
 }
 
 .mfp-wrap {
@@ -145,20 +145,25 @@ button::-moz-focus-inner {
 }
 
 .mfp-close {
-	position: relative;
-	right: 10px !important;
-	top: 25px;
+	position: absolute;
+	right: -20px;
+	top: -20px;
 	font-size: 28px;
 	font-family: Arial, Baskerville, monospace;
 }
-.mfp-content .mfp-close {
+@media screen and (max-width: 767px) {
+	.mfp-close {
+		right: -10px;
+	}
+}
+/* .mfp-content .mfp-close {
 	display: none;
 }
 @media only screen and (max-width: 767px) {
 	.mfp-content .mfp-close {
 		display: block;
 	}
-}
+} */
 /* .mfp-close:hover,
   .mfp-close:focus {
     opacity: 1; }
@@ -166,7 +171,11 @@ button::-moz-focus-inner {
     top: 1px; } */
 
 .mfp-close-btn-in .mfp-close {
+	background-color: #F8F8F8;
 	color: #333;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
 }
 
 .mfp-image-holder .mfp-close,

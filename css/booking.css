@@ -1,0 +1,84 @@
+.pagetitle {
+	background: url(../img/bg3.jpg) no-repeat center / cover;
+	height: 300px;
+	font-size: 16px;
+	line-height: 1.8;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.pagetitle h1 {
+	font-size: 60px;
+	line-height: 0.7;
+  opacity: 0;
+}
+@media screen and (max-width: 992px) {
+	.pagetitle h1 {
+		font-size: 40px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.pagetitle {
+		padding: 40px 0;
+		height: auto;
+	}
+}
+.main-booking{
+	background: url(../img/bg4.jpg) no-repeat center bottom / 100% auto;
+  padding: 0 0 1px;
+}
+.booking{
+  margin: -34px 0 0;
+}
+.is-box{
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  margin: 0 0 20px;
+  padding: 0 15px;
+}
+.info .logo a{
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #E9E9E9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: -60px auto 10px;
+}
+.tel{
+  font-size: 18px;
+}
+.tel span{
+	display: inline-block;
+	padding: 0 0 0 25px;
+	background: url(../img/icon-phone-red.svg) no-repeat left 4px / 18px 18px;
+}
+.address span{
+	display: inline-block;
+	padding: 5px 0 0 25px;
+	background: url(../img/icon-address.svg) no-repeat left -1px bottom / 28px 28px;
+}
+.opentime{
+	line-height: 1.8;
+}
+.order{
+	padding: 15px;
+}
+.order h5{
+	font-size: 16px;
+}
+.order dt{
+	font-weight: normal;
+	width: calc(100% - 80px);
+}
+.order dd{
+	font-weight: normal;
+}
+.order-list .text-truncate{
+	display: inline-block;
+	width: 100%;
+	-webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}

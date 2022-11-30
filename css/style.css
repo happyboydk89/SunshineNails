@@ -1,13 +1,13 @@
 @font-face {
-	font-family: "Quentin";
-	src: local("Quentin"), url(../fonts/Quentin.otf) format("opentype");
+	font-family: 'Quentin';
+	src: local('Quentin'), url(../fonts/Quentin.otf) format('opentype');
 }
 @font-face {
-	font-family: "Ramaraja";
-	src: local("Ramaraja"), url(../fonts/Ramaraja-Regular.TTF) format("opentype");
+	font-family: 'Ramaraja';
+	src: local('Ramaraja'), url(../fonts/Ramaraja-Regular.TTF) format('opentype');
 }
 body {
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: #333;
 	font-size: 14px;
 	font-weight: 400;
@@ -35,10 +35,10 @@ h2 {
 @media screen and (max-width: 767px) {
 }
 .Quentin {
-	font-family: "Quentin";
+	font-family: 'Quentin';
 }
 .Ramaraja {
-	font-family: "Ramaraja";
+	font-family: 'Ramaraja';
 }
 
 /* header__top */
@@ -128,7 +128,7 @@ h2 {
 		visibility: visible;
 	}
 	.is-menu-open .btn-navbar i::before {
-		content: "\f00d";
+		content: '\f00d';
 	}
 }
 /* footer */
@@ -344,4 +344,30 @@ h2 {
 	.is-menu-open .btn-navbar {
 		background: url(../img/close.png) no-repeat center;
 	}
+}
+/*  */
+.p-modal {
+	max-width: 550px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 15px 20px 30px;
+	position: relative;
+}
+.p-modal h5 {
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0 0 30px;
+}
+.p-modal a,
+.is-red {
+	color: #ea030d;
+}
+@media screen and (max-width: 767px) {
+	.mfp-content {
+		padding: 0 4%;
+	}
+}
+.langs a:not(.is-active){
+	opacity: 0.5;
 }
