@@ -1,5 +1,5 @@
 .pagetitle {
-	background: url(../img/bg3.jpg) no-repeat center / cover;
+	background: url(../img/bg3.jpg) no-repeat center bottom / cover;
 	height: 300px;
 	font-size: 16px;
 	line-height: 1.8;
@@ -69,16 +69,320 @@
 .order h5{
 	font-size: 16px;
 }
-.order dt{
+.order-list dl, .order-total dl{
+	line-height: 1.3;
+	padding: 15px 0;
+	border-top: 1px solid #eee;
+	border-radius: 5px 5px 0 0;
+}
+.order dt, .product-list dt{
 	font-weight: normal;
 	width: calc(100% - 80px);
 }
 .order dd{
 	font-weight: normal;
 }
-.order-list .text-truncate{
+.order-list .text-truncate, .product-list .text-truncate{
 	display: inline-block;
 	width: 100%;
 	-webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+}
+.order-list .is-user .text-truncate{
+	width: calc(100% - 30px);
+	padding-left: 15px;
+}
+.order-total dl{
+	padding: 15px 15px 0;
+	margin: 0 -15px;
+	font-size: 18px;
+}
+.order-total dl .text-muted{
+	font-size: 14px;
+}
+.is-hidden{
+	display: none;
+}
+.order-box h3{
+	font-size: 18px;
+	margin: 0 0 5px;
+	background: url(../img/down.svg) no-repeat right center / 20px 20px;
+	cursor: pointer;
+}
+.order-box h3.is-open{
+	background: url(../img/up.svg) no-repeat right center / 20px 20px;
+}
+.product-list label{
+	border-bottom: 1px solid #eee;
+	padding: 25px 0;
+}
+.product-list li:first-child label{
+	padding-top: 10px;
+}
+.product-list li:last-child label{
+	border-bottom: none;
+}
+.product-list dl{
+	width: calc(100% - 40px);
+	line-height: 1.3;
+}
+@media screen and (max-width: 767px) {
+	.product-list dl{
+		width: calc(100% - 30px);
+	}
+}
+.product-list input[type="checkbox"]{
+	display: none;
+}
+.product-list span.icon{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/check.svg) no-repeat center / 20px 20px;
+}
+.product-list input[type="checkbox"]:checked + span.icon {
+	background: url(../img/check_on.svg) no-repeat center / 20px 20px;
+}
+.order-menu a{
+	color: #333;
+	display: block;
+	padding: 19px 13px;
+	position: relative;
+}
+.order-menu a:hover{
+	color: #EA030D;
+	text-decoration: none;
+}
+.order-menu a::after{
+	content: "";
+	width: 100%;
+	height: 3px;
+	background-color: #EA030D;
+	border-radius: 3px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: 0.3s;
+}
+.order-menu a:hover::after{
+	opacity: 1;
+}
+.order-menu .slick{
+	padding: 0 20px;
+}
+.order-menu .slick-arrow {
+	width: 20px;
+	height: 20px;
+	border-radius: 0%;
+	margin-top: -10px;
+}
+.order-menu .slick-prev {
+	background-image: url(../img/prev2.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	left: -5px;
+}
+.order-menu .slick-next {
+	background-image: url(../img/next2.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	right: -5px;
+}
+.size-16{
+	font-size: 16px;
+}
+.size-18{
+	font-size: 18px;
+}
+.avatar{
+	margin: 0 0 5px;
+}
+.avatar img{
+	border-radius: 50%;
+}
+.user-list{
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.user-list li{
+  margin-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.user-list label{
+	background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #eee;
+	padding: 12px;
+	position: relative;
+}
+.user-list input[type="radio"]{
+	display: none;
+}
+.user-list span.icon{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/check2.svg) no-repeat center / 20px 20px;
+	position: absolute;
+	right: 6px;
+	top: 6px;
+}
+.user-list input[type="radio"]:checked + span.icon {
+	background: url(../img/check2_on.svg) no-repeat center / 20px 20px;
+}
+.confirm-list{
+	border-radius: 5px 5px 0 0;
+  border-top: 1px solid #eee;
+	margin: 0 -20px;
+	padding: 10px 20px 5px;
+}
+.confirm-list dt{
+	width: 90px;
+}
+.confirm-list dd{
+	width: calc(100% - 90px);
+}
+.user-information{
+	border-top: 1px solid #eee;
+	padding: 10px 0 0;
+}
+
+@media screen and (min-width: 640px) {
+	#checktiming.p-modal{
+		padding: 15px 35px;
+	}
+}
+.working{
+	margin-left: -5px;
+	margin-right: -5px;
+}
+.working li{
+  margin-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.working input[type="radio"]{
+	display: none;
+}
+.working label{
+  border-radius: 5px;
+  border: 1px solid #eee;
+	padding: 4px;
+}
+.working input[type="radio"]:checked + label{
+	color: #EA030D;
+	border-color: #EA030D;
+}
+.working input[type="radio"]:disabled + label{
+	background-color: #eee;
+	pointer-events: none;
+}
+.p-month{
+	position: relative;
+}
+.p-month-list{
+	border-top: 1px solid #eee;
+	border-radius: 5px 5px 0 0;
+	padding: 10px 15px;
+	margin: 0 -15px;
+}
+@media screen and (min-width: 640px) {
+	.p-month-list{
+		padding: 10px 35px;
+		margin: 0 -35px;
+	}
+}
+.p-month-list li{
+	width: 14.28%;
+	cursor: pointer;
+}
+.p-month-number{
+	display: block;
+	width: 100%;
+	height: 0;
+	padding: 100% 0 0;
+	position: relative;
+}
+.p-month-number span{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #eee;
+	border-left: none;
+}
+.p-month-list li:first-child .p-month-number span{
+	border: 1px solid #eee;
+}
+.p-month-list li.is-current .p-month-number span{
+	background-color: #EA030D;
+	color: #fff;
+}
+.p-month-arrow{
+	position: absolute;
+	top: 50%;
+	z-index: 11;
+	cursor: pointer;
+}
+.p-month-prev{
+	left: -25px;
+}
+.p-month-next{
+	right: -25px;
+}
+.history-list .is-box{
+	padding: 15px 10px;
+}
+@media screen and (min-width: 640px) {
+	.history-list .is-box{
+		padding: 17px 20px;
+	}
+}
+.history-list .h-content{
+	width: calc(100% - 60px);
+	padding: 0 0 0 15px;
+}
+.h-time dt span{
+	display: inline-block;
+	padding: 3px 0 3px 33px;
+	background: url(../img/icon-time.svg) no-repeat left center / 24px 24px;
+}
+@media screen and (max-width: 640px) {
+	.h-time dt span{
+		padding: 3px 0 3px 29px;
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+.h-price dd{
+	white-space: nowrap;
+}
+.profile-box{
+	padding: 10px 15px 15px;
+}
+.edit-name span{
+	display: inline-block;
+	padding: 2px 0 4px 33px;
+	background: url(../img/icon-edit.svg) no-repeat left top / 24px 24px;
+}
+.side-box{
+	padding: 15px;
+}
+.side-menu{
+	border-top: 1px solid #eee;
+	margin-top: 10px;
+	padding-top: 1px;
+}
+.side-menu li{
+	margin-top: 10px;
+}
+.side-menu a{
+	display: block;
+	padding: 0 0 0 15px;
+	border-left: 3px solid #EA030D;
 }
